@@ -1,0 +1,88 @@
+#sort-mobile {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.sort-select {
+  display: inline-flex;
+  padding: 0.8rem 1.2rem;
+  border: 0.1rem solid rgb(221, 221, 221);
+  border-radius: 0.4rem;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.sort-select:hover {
+  border-color: rgb(221, 221, 221);
+}
+
+.sort-select:focus {
+  border-color: rgb(221, 221, 221);
+  box-shadow: 0 0 0.3rem rgb(221, 221, 221);
+}
+
+fieldset {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.1rem solid rgb(221, 221, 221);
+  margin-bottom: 2.5rem;
+}
+
+table,
+thead,
+tbody,
+th,
+tr,
+td {
+  display: block;
+}
+
+thead {
+  display: none;
+}
+
+th,
+tr:not(:last-child) td {
+  border-bottom: none;
+}
+
+tr {
+  border: 0.1rem solid rgb(221, 221, 221);
+  margin-bottom: 0.5rem;
+  padding: 2rem 0 0.5rem 0;
+}
+
+td {
+  border: none;
+  position: relative;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+td:before {
+  content: attr(data-title);
+  position: absolute;
+  left: 1rem;
+  top: -1rem;
+  font-weight: bold;
+  width: 18%;
+  white-space: nowrap;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 100%;
+}
+th:nth-child(2),
+td:nth-child(2) {
+  width: 100%;
+}
+th:nth-child(3),
+td:nth-child(3) {
+  width: 100%;
+}

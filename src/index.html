@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- index.html. DT211G - Moment 2 - EcmaScript, Conny Sirviö VT2024 -->
+<!DOCTYPE html><!-- index.html. DT211G - Moment 2 - ECMAScript, Conny Sirviö VT2024 -->
 <html lang="sv">
 
 <head>
@@ -11,14 +11,60 @@
 <body>
     <!-- Sidtoppen -->
     <header>
-        <div class="logo-wrapper">cosi<br>2301</div>
+        <div class="logo-holder">🤡
+            <div class="logo-wrapper">cosi<br>2301</div>
+        </div>
     </header>
     <!-- wrapper -->
     <div class="container">
         <!-- Huvudinnehåll -->
         <main>
             <h1>Webbutveckling - Ramschema</h1>
-            <div class="table-holder"><!-- DATAINNEHÅLL HÄR --></div>
+            <div id="table-holder">
+                <div class="input-container">
+                    <label for="search-input" class="hidden-label">Sök</label>
+                    <input type="text" placeholder="Sök efter kurskod eller kursnamn" id="search-input"
+                        name="search-input">
+                </div>
+                <div class="table-container">
+                    <!-- SORTERING MOBILT LÄGE -->
+                    <div id="sort-mobile">
+                        <fieldset>
+                            <legend>Sortera:</legend>
+                            <label for="sort-code" class="hidden-label">Sortera kurskod</label>
+                            <select class="sort-select" data-column="0" id="sort-code" name="sort-code">
+                                <option value="" selected disabled hidden>Kurskod</option>
+                                <option value="asc">Stigande</option>
+                                <option value="desc">Fallande</option>
+                            </select>
+                            <label for="sort-name" class="hidden-label">Sortera kursnamn</label>
+                            <select class="sort-select" data-column="1" id="sort-name" name="sort-name">
+                                <option value="" selected disabled hidden>Namn</option>
+                                <option value="asc">Stigande</option>
+                                <option value="desc">Fallande</option>
+                            </select>
+                            <label for="sort-prog" class="hidden-label">Sortera progression</label>
+                            <select class="sort-select" data-column="2" id="sort-prog" name="sort-prog">
+                                <option value="" selected disabled hidden>Progression</option>
+                                <option value="asc">Stigande</option>
+                                <option value="desc">Fallande</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><a href="#" class="sort-header" data-column="0">Kurskod</a></th>
+                                <th><a href="#" class="sort-header" data-column="1">Kursnamn</a></th>
+                                <th><a href="#" class="sort-header" data-column="2">Progression</a></th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-data">
+                            <!-- TABELLINNEHÅLLET -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </main>
         <!-- Sidfoten -->
         <footer>
@@ -26,6 +72,7 @@
                 © CoSi2301, VT2024</p>
         </footer>
     </div>
+    <script src="js/main.js" type="module"></script>
 </body>
 
 </html>
