@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@100..900&family=Rubik+Mono+One&display=swap");
+@import url("reset.css");
+@import url("basic.css");
+@import url("basic-stil.css");
+@import url("all-screens.css");
+/* @import url("sm-screen.css") (max-width: 600px);
+@import url("lg-screen.css") (min-width: 600.5px); */

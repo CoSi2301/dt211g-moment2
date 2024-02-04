@@ -1,0 +1,63 @@
+header {
+  width: 100%;
+  min-height: 8rem;
+  height: 8rem;
+  max-height: 8rem;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/* Logotypen
+----------------------------------------------------------------------------------------- Logotypen */
+
+.logo-wrapper {
+  position: relative;
+  top: 0;
+  left: 5vw;
+  font-size: 3.6rem;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0.8;
+  text-align: center;
+  text-shadow: 0rem 0rem 0.1rem var(--black);
+  width: fit-content;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/* Huvudinnehåll
+------------------------------------------------------------------------------------- Huvudinnehåll */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 8rem);
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  align-self: center;
+  flex-grow: 1;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/* Sidfoten
+------------------------------------------------------------------------------------------ Sidfoten */
+
+footer {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}

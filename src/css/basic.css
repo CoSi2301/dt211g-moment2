@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------------------------------------------*/
+/* Grundläggande
+------------------------------------------------------------------------------------- Grundläggande */
+
+:root {
+  font-size: 62.5%;
+
+  --primary: rgb(66, 62, 55);
+  --secondary: rgb(227, 178, 60);
+  --accent: rgb(237, 235, 215);
+
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--accent);
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+h1 {
+  color: var(--primary);
+  font-size: 6rem;
+  font-family: "Lobster", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.2rem;
+}

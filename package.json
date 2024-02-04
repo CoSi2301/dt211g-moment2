@@ -1,0 +1,15 @@
+{
+  "name": "dt211g-moment2",
+  "version": "1.0.0",
+  "description": "Ecmascript",
+  "source": "src/index.html",
+  "author": "CoSi2301",
+  "license": "ISC",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}

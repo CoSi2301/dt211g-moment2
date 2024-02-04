@@ -1,0 +1,84 @@
+/* Enkel nollställning för att element skall visas någorlunda lika i de flesta webbläsare 
+------------------------------------------------------------------------------------------*/
+
+/* Dynamiskt grundmått på teckenstorlek.
+--------------------------------------------------------------------------------------------------*/
+/* html {
+  font-size: calc(15px + 0.390625vw);
+} */
+
+/* Äldre webbläsare behöver veta hur dessa "nya" html5-element skall visas, sätter "block" på dem
+--------------------------------------------------------------------------------------------------*/
+header,
+section,
+footer,
+aside,
+nav,
+article,
+figure,
+figcaption {
+  display: block;
+}
+
+/* Nollar margin och padding på alla element, förenklar beräkningar av storlekar på element
+--------------------------------------------------------------------------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Man rekommenderas ha ett radavstånd på 1.5 för att underlätta läsning vid dyslexi
+och plockar bort en utdaterad funktion i macos för typsnittsutjämning.
+-------------------------------------------------------------------------------------*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Säkerställer att olika mediatyper visas på ett mer "naturligt" och lika sätt
+--------------------------------------------------------------------------------*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Säkerställer att bilder skalar enligt samma algoritm
+--------------------------------------------------------*/
+/* img {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+} */
+
+/*
+För att det inte skall vara olika storlek på typsnitten för olika formelement låter vi dem ärva från föregående element
+------------------------------------------------------------------------------------------------------------------------*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+Låter rubriker och paragrafer bryta ord när de inte får plats i sin behållare och applicerar ett bindestreck där det bryts
+---------------------------------------------------------------------------------------------------------------------------*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
