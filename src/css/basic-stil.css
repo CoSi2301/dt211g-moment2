@@ -9,10 +9,41 @@ header {
 /* Logotypen
 ----------------------------------------------------------------------------------------- Logotypen */
 
-.logo-wrapper {
+.logo-holder {
+  background-color: rgb(74, 87, 89);
+  height: 7.8rem;
+  font-size: 3.6rem;
+  padding: 2.6rem 0 0 0;
+  text-align: center;
+  z-index: 1;
   position: relative;
   top: 0;
-  left: 5vw;
+  left: 10vw;
+  width: 14.2rem;
+  display: block;
+  cursor: default;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0rem -5rem 3.6rem -2.8rem inset;
+  text-shadow: 0rem 0rem 0.6rem var(--black);
+}
+
+.logo-holder:hover .logo-wrapper {
+  transition: all 0.3s ease;
+  height: 7.8rem;
+  transform: rotateX(50deg);
+  top: -2rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0rem 2rem 4rem,
+    rgba(0, 0, 0, 0.3) 0rem 0.7rem 1.3rem -0.3rem,
+    rgba(0, 0, 0, 0.2) 0rem -0.3rem 0rem inset;
+}
+
+.logo-wrapper {
+  height: 7.8rem;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
   font-size: 3.6rem;
   font-family: "Rubik Mono One", monospace;
   font-weight: 400;
@@ -25,10 +56,11 @@ header {
   color: var(--primary);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-
   padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0rem 0.2rem 0.4rem,
+    rgba(0, 0, 0, 0.3) 0rem 0.7rem 1.3rem -0.3rem,
+    rgba(0, 0, 0, 0.2) 0rem -0.3rem 0rem inset;
+  transition: all 0.3s ease;
 }
 
 /*--------------------------------------------------------------------------------------------------*/
@@ -56,6 +88,7 @@ main {
 ------------------------------------------------------------------------------------------ Sidfoten */
 
 footer {
+  padding-bottom: 1rem;
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
   font-style: normal;

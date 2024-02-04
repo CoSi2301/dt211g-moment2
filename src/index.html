@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- index.html. DT211G - Moment 2 - EcmaScript, Conny Sirviö VT2024 -->
+<!DOCTYPE html><!-- index.html. DT211G - Moment 2 - ECMAScript, Conny Sirviö VT2024 -->
 <html lang="sv">
 
 <head>
@@ -11,14 +11,21 @@
 <body>
     <!-- Sidtoppen -->
     <header>
-        <div class="logo-wrapper">cosi<br>2301</div>
+        <div class="logo-holder">🤡
+            <div class="logo-wrapper">cosi<br>2301</div>
+        </div>
     </header>
     <!-- wrapper -->
     <div class="container">
         <!-- Huvudinnehåll -->
         <main>
             <h1>Webbutveckling - Ramschema</h1>
-            <div class="table-holder"><!-- DATAINNEHÅLL HÄR --></div>
+            <div id="table-holder">
+                <div class="input-container">
+                    <input type="text" placeholder="Sök efter kurskod eller kursnamn" id="search-input">
+                </div>
+                <!-- DATAINNEHÅLL HÄR -->
+            </div>
         </main>
         <!-- Sidfoten -->
         <footer>
@@ -26,6 +33,7 @@
                 © CoSi2301, VT2024</p>
         </footer>
     </div>
+    <script src="js/main.js" type="module"></script>
 </body>
 
 </html>
