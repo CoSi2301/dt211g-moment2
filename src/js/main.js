@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // SORTERA ----------------------------------------------------------------------------------------
   // ---------------------------------------------------------------------------------------- SORTERA
 
-  // Första sorteringsordning
+  // Första sorteringsordning på kolumner , använder "data-*"-attributet för att göra dem unika
   const sortOrder = { 0: "asc", 1: "asc", 2: "asc" };
 
   // Klick på rubriker
