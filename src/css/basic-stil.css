@@ -15,6 +15,7 @@ header {
 
 .logo-holder {
   background-color: rgb(74, 87, 89);
+  color: var(--white);
   height: 7.8rem;
   font-size: 3.6rem;
   padding: 2.6rem 0 0 0;
