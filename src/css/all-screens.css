@@ -81,3 +81,7 @@ table a {
 table a:hover {
   color: var(--secondary);
 }
+
+#sort-mobile {
+  display: none;
+}

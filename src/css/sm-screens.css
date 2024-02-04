@@ -1,3 +1,37 @@
+#sort-mobile {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.sort-select {
+  display: inline-flex;
+  padding: 0.8rem 1.2rem;
+  border: 0.1rem solid rgb(221, 221, 221);
+  border-radius: 0.4rem;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.sort-select:hover {
+  border-color: rgb(221, 221, 221);
+}
+
+.sort-select:focus {
+  border-color: rgb(221, 221, 221);
+  box-shadow: 0 0 0.3rem rgb(221, 221, 221);
+}
+
+fieldset {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.1rem solid rgb(221, 221, 221);
+  margin-bottom: 2.5rem;
+}
+
 table,
 thead,
 tbody,

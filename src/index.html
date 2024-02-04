@@ -25,12 +25,33 @@
                     <input type="text" placeholder="Sök efter kurskod eller kursnamn" id="search-input">
                 </div>
                 <div class="table-container">
+                    <!-- SORTERING MOBILT LÄGE -->
+                    <div id="sort-mobile">
+                        <fieldset>
+                            <legend>Sortera:</legend>
+                            <select class="sort-select" data-column="0">
+                                <option value="" selected disabled hidden>Kurskod</option>
+                                <option value="asc">Stigande</option>
+                                <option value="desc">Fallande</option>
+                            </select>
+                            <select class="sort-select" data-column="1">
+                                <option value="" selected disabled hidden>Namn</option>
+                                <option value="asc">Stigande</option>
+                                <option value="desc">Fallande</option>
+                            </select>
+                            <select class="sort-select" data-column="2">
+                                <option value="" selected disabled hidden>Progression</option>
+                                <option value="asc">Stigande</option>
+                                <option value="desc">Fallande</option>
+                            </select>
+                        </fieldset>
+                    </div>
                     <table>
                         <thead>
                             <tr>
-                                <th><a href="#">Kurskod</a></th>
-                                <th><a href="#">Kursnamn</a></th>
-                                <th><a href="#">Progression</a></th>
+                                <th><a href="#" class="sort-header" data-column="0">Kurskod</a></th>
+                                <th><a href="#" class="sort-header" data-column="1">Kursnamn</a></th>
+                                <th><a href="#" class="sort-header" data-column="2">Progression</a></th>
                             </tr>
                         </thead>
                         <tbody id="table-data">
