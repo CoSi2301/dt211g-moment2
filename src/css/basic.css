@@ -37,7 +37,6 @@ h1 {
   color: var(--primary);
   font-size: clamp(3rem, 3vw + 2.1rem, 6rem);
   font-family: "Lobster", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -0.2rem;
